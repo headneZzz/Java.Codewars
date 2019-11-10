@@ -1,6 +1,7 @@
+package kyu4;
+
 /**
  * Write a function that takes a positive integer and returns the next smaller positive integer containing the same digits.
- *
  * For example:
  * nextSmaller(21) == 12
  * nextSmaller(531) == 513
@@ -13,22 +14,18 @@
 public class NextSmallerNumber {
     public static long nextSmaller(long n) {
         StringBuilder out = new StringBuilder().append(n);
-        if (out.length()<=1)
+        if (out.length() <= 1)
             return -1;
-        for(int i=out.length()-1;i>=0;i--) {
-            for(int j=i-1;j>=0;j--){
-                if (out.charAt(j)<out.charAt(i)){
-                    if (i==0 && out.charAt(i)=='0'){
-                        continue;
-                    }
+        for (int i = out.length() - 1; i > 0; i--) {
+            for (int j = i - 1; j >= 0; j--) {
+                if (out.charAt(j) > out.charAt(i)) {
                     char temp = out.charAt(i);
-                    out.setCharAt(i,out.charAt(j));
-                    out.setCharAt(j,temp);
-                    return Long.valueOf(out.toString().trim());
+                    out.setCharAt(i, out.charAt(j));
+                    out.setCharAt(j, temp);
+                    return Long.parseLong(out.toString().trim());
                 }
             }
         }
         return -1;
-
     }
 }
