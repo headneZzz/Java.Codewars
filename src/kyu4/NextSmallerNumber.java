@@ -11,6 +11,7 @@ package kyu4;
  * nextSmaller(135) == -1
  * nextSmaller(1027) == -1 // 0721 is out since we don't write numbers with leading zeros
  */
+//TODO
 public class NextSmallerNumber {
     public static long nextSmaller(long n) {
         StringBuilder out = new StringBuilder().append(n);

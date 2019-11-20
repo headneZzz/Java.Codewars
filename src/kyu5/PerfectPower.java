@@ -15,24 +15,10 @@ import java.util.Arrays;
  */
 public class PerfectPower {
     public static int[] isPerfectPower(int n) {
-        for (int i = 2; i <= n / 2; i++) {
-            int temp = n;
-            int k = 0;
-            while (temp > 1) {
-                temp /= i;
-                k++;
-            }
-            if (temp == 1) {
-                int[] out = new int[2];
-                out[0] = i;
-                out[1] = k;
-                return out;
-            }
+        for (int m = 2; m * m <= n; m++) {
+            for (int k = 2; Math.pow(m, k) <= n; k++)
+                if (Math.pow(m, k) == n) return new int[]{m, k};
         }
         return null;
-    }
-    //TODO
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(isPerfectPower(5)));
     }
 }

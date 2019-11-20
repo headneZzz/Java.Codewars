@@ -15,6 +15,7 @@ import java.util.stream.Stream;
  *    1  3     4   5
  * Should return following list: [2,8,9,1,3,4,5]
 */
+//TODO
 public class SortBinaryTreeByLevels {
     public static List<Integer> treeByLevels(Node node) {
         List<Integer> out = new ArrayList<>();
