@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  * the corresponding name between < and > and the address.
  * Unfortunately everything is mixed, things are not always in the same order; parts of lines are cluttered with
  * non-alpha-numeric characters (except inside phone number and name).
- * <p>
+ *
  * Examples of John's phone book lines:
  * "/+1-541-754-3010 156 Alphand_St. <J Steeve>\n"
  * " 133, Green, Rd. <E Kustur> NY-56423 ;+1-541-914-3010!\n"

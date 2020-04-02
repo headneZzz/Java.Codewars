@@ -6,7 +6,6 @@ import java.util.Map;
 import java.util.List;
 
 public class PickPeaks {
-
     public static Map<String, List<Integer>> getPeaks(int[] arr) {
         List<Integer> pos = new LinkedList<>();
         List<Integer> peaks = new LinkedList<>();

@@ -9,13 +9,10 @@ import java.util.Arrays;
  * Valid arrays:
  * a = [121, 144, 19, 161, 19, 144, 19, 11]
  * b = [121, 14641, 20736, 361, 25921, 361, 20736, 361]
- * <p>
  * a = [121, 144, 19, 161, 19, 144, 19, 11]
  * b = [11*11, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19]
- * <p>
  * Invalid arrays
  * If we change the first number to something else, comp may not return true anymore:
- * <p>
  * a = [121, 144, 19, 161, 19, 144, 19, 11]
  * b = [132, 14641, 20736, 361, 25921, 361, 20736, 361]
  */

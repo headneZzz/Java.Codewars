@@ -18,8 +18,4 @@ public class ValidBraces {
         }
         return true;
     }
-
-    public static void main(String[] args) {
-        System.out.println(isValid("[(])(}(}))(}{][())({}}{()][][(((({{}}]]))}])"));
-    }
 }

@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Your task is to check wheter a given integer is a perfect power.
  * If it is a perfect power, return a pair m and k with mk = n as a proof.
  * Otherwise return Nothing, Nil, null, NULL, None or your language's equivalent.
- * <p>
+ *
  * Examples
  * isPerfectPower(4) => new int[]{2,2}
  * isPerfectPower(5) => null
